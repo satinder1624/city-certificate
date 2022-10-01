@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&family=Lato:wght@100&family=Roboto:wght@900&family=Ubuntu:wght@300&display=swap');
+
+
+:root{
+    --Grey:#414141;
+    --BoldWhite:#ffffff;
+}
+
+body{
+    font-family: 'Jost', sans-serif;
+    background-color: var(--Grey);
+    color: var(--BoldWhite);
+    /* -webkit-print-color-adjust: exact !important; */
+}
+
+p{
+    color: black
+}
+
+section{
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+div{
+    text-align: center;
+}
+
+.main-container{
+    width: 50%;
+}
+
+.heading h1{
+    letter-spacing: 0.5rem;
+}
+
+.heading h4 {
+    letter-spacing: 0.2rem;
+}
+
+.first-row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.first-row div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.first-row h4{
+    letter-spacing: 0.1rem;
+}
+
+.second-row{
+    margin: 2rem 0;
+    text-align: left;
+}
+
+.placeholder-conatiner{
+    /* margin-right: 0.4rem; */
+    font-size: 1.5rem;
+}
+
+.value-container{
+    margin: 0 0.2rem;
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.serial-no,.date{
+    text-decoration: underline;
+}
+
+.new-second-row{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.name-container,
+.so-container,
+.date-from-container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.text{
+    flex: 0.3;
+    font-size: 20px;
+}
+
+.value{
+    flex: 0.7;
+    font-size: 20px;
+    font-weight: bold;
+    /* text-decoration: underline; */
+}
+
+.text{
+    text-align: left;
+}
+
+.value{
+    text-align: left;
+    border-bottom: 2px solid black;
+}
+
+.date-value{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.course-info{
+    margin-top: 1.5rem;
+    display: flex;
+    font-size: 20px;
+}
+
+.course-done-list{
+    margin-top: 1rem;
+}
+
+.course-done-list div{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    gap: 0.5rem;
+    align-items: flex-start;
+    width: fit-content;
+    margin: 0 auto;
+    border-bottom: 2px solid black;
+}
+
+.course-done-list div span{
+    text-align: left;
+}
+
+img{
+    width: 12rem
+}
+
+.iso-tm-sign-container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    justify-content: space-between;
+    /* background-color: red; */
+    width: 60rem;
+}
+
+.iso-tm{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.sign-container > div{
+    display: flex;
+    gap: 5rem;
+    flex-direction: column;
+}
+
+.grade-ias-iaf-conatienr{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 60rem;
+    margin-top: 1rem;
+    justify-content: space-between;
+}
+
+.grade-container{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+p{
+    margin-top: 3rem;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.web-address{
+    display: flex;
+    width: 67rem;
+    justify-content: flex-end;
+}
+
+@media (max-width: 1000px) {
+    .main-container,.iso-tm-sign-container,.grade-ias-iaf-conatienr,.web-address{
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 639px) {
+    .iso-tm-sign-container,.grade-ias-iaf-conatienr{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 413px) {
+    .iso-tm{
+        flex-direction: column;
+    }
+}
+
+ @media print {
+    body{
+        color: black;
+    }
+ }
