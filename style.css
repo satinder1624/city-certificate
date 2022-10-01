@@ -224,4 +224,8 @@ a{
     body{
         color: black;
     }
+
+    .grade-ias-iaf-conatienr,.iso-tm-sign-container{
+        flex-direction: row;
+    }
  }
